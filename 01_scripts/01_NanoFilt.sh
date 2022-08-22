@@ -25,6 +25,6 @@ fi
 
 
 # 1. Run NanoFilt
-gunzip -c $FASTQ | NanoFilt -q $MIN_QUAL -l $MIN_LEN --readtype 1D | gzip > $FILT_DIR/"$SAMPLE"_min"$MIN_LEN"bp_qual"$MIN_QUAL".fastq.gz
-#gunzip -c $FASTQ | NanoFilt -q $MIN_QUAL -l $MIN_LEN --readtype 1D | gzip > $FILT_DIR/"$SAMPLE".fastq.gz
+#gunzip -c $FASTQ | NanoFilt -q $MIN_QUAL -l $MIN_LEN --readtype 1D | gzip > $FILT_DIR/"$SAMPLE"_min"$MIN_LEN"bp_qual"$MIN_QUAL".fastq.gz
+gunzip -c $FASTQ | NanoFilt -q $MIN_QUAL -l $MIN_LEN --readtype 1D | gzip > $FILT_DIR/"$SAMPLE".fastq.gz
 
