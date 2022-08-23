@@ -3,6 +3,8 @@
 # Summary plots for raw ONT data, on merged files
 # parallel -a 02_infos/ind_ONT.txt -j 4 srun -p small -c 1 -J {}_00_NanoPlot --mem=10G -o log/00_NanoPlot_{}_%j.log 01_scripts/00_NanoPlot.sh {} &
 
+# REQUIRED FIX : create suitable conda env
+
 # VARIABLES
 SAMPLE=$1
 CAT_DIR="04_raw_data_cat"
