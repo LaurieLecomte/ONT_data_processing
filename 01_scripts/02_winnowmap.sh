@@ -8,7 +8,7 @@
 SAMPLE=$1
 GENOME="03_genome/genome.fasta"
 FILT_DIR="05_filtered"
-FASTQ="$FILT_DIR/"$SAMPLE".fastq.gz
+FASTQ="$FILT_DIR/"$SAMPLE".fastq.gz"
 
 ALIGNED_DIR="06_aligned"
 
