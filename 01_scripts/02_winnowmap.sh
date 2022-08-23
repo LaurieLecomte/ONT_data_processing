@@ -27,4 +27,7 @@ meryl print greater-than distinct=0.9998 $ALIGNED_DIR/merylDB > $ALIGNED_DIR/"$S
 winnowmap --MD --cs -W $ALIGNED_DIR/"$SAMPLE"_repetitive_k15.txt -ax map-ont $GENOME $FASTQ > $ALIGNED_DIR/"$SAMPLE".sam
 
 # 3. Sort and convert to bam
-samtools sort $ALIGNED_DIR/"$SAMPLE".sam -o $ALIGNED_DIR/"$SAMPLE".bam
+samtools sort $ALIGNED_DIR/"$SAMPLE".sam -o $ALIGNED_DIR/"$SAMPLE".sorted.bam
+
+# 4. Index sorted bam file
+samtools index $ALIGNED_DIR/"$SAMPLE".sorted.bam
