@@ -6,7 +6,7 @@
 # VARIABLES
 SAMPLE=$1
 CAT_DATA="04_raw_data_cat" 
-FASTQ="$RAW_DATA/"$SAMPLE".fastq.gz" # merged fastq.gz
+FASTQ="$CAT_DATA/"$SAMPLE".fastq.gz" # merged fastq.gz
 
 FILT_DIR="05_filtered"
 
