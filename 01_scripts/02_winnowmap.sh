@@ -12,6 +12,8 @@ FASTQ="$FILT_DIR/"$SAMPLE".fastq.gz"
 
 ALIGNED_DIR="06_aligned"
 
+# LOAD REQUIRED MODULES
+module load samtools
 
 # 0. Create output dir
 if [[ ! -d "$ALIGNED_DIR" ]]
