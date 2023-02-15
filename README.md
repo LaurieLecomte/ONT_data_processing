@@ -15,11 +15,11 @@ Pipeline for filtering and mapping Oxford Nanopore (ONT) reads
 
 * A reference genome (.fasta) and its index (.fai) in `03_genome`
 * Raw fastq files in `04_raw_data`, in a seperate folder for each sample (e.g., `04_raw_data/SAMPLE_X`, `04_raw_data/SAMPLE_Y`, ...)
-* A sample IDs list (`02_infos/ind_ONT.txt), one ID per line
+* A sample IDs list (`02_infos/ind_ONT.txt`), one ID per line
 * 
 
 ### Software
-* NanoPlot 1.33.0+ (https://github.com/wdecoster/NanoPlot/releases/tag/1.33.0)
-* NanoFilt 2.8.0+ (https://github.com/wdecoster/nanofilt/releases/tag/v2.8.0)
-* Winnowmap 2.03+ (https://github.com/marbl/Winnowmap/releases/tag/v2.03)
+* [NanoPlot 1.33.0+](https://github.com/wdecoster/NanoPlot/releases/tag/1.33.0)
+* [NanoFilt 2.8.0+](https://github.com/wdecoster/nanofilt/releases/tag/v2.8.0)
+* [Winnowmap 2.03+](https://github.com/marbl/Winnowmap/releases/tag/v2.03)
 * GNU parallel
