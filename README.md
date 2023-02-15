@@ -13,11 +13,13 @@ Pipeline for filtering and mapping Oxford Nanopore (ONT) reads
 
 ### Files
 
-* A reference genome (.fasta) and its index (.fai) in `03_genome`
+* A reference genome named `genome.fasta` and its index (.fai) in `03_genome`
 * Raw fastq files in `04_raw_data`, in a seperate folder for each sample (e.g., `04_raw_data/SAMPLE_X`, `04_raw_data/SAMPLE_Y`, ...)
 * A sample IDs list (`02_infos/ind_ONT.txt`), one ID per line
 
 ### Software
+
+#### Required tools
 * [NanoPlot 1.33.0+](https://github.com/wdecoster/NanoPlot/releases/tag/1.33.0)
 * [NanoFilt 2.8.0+](https://github.com/wdecoster/nanofilt/releases/tag/v2.8.0)
 * [Winnowmap 2.03+](https://github.com/marbl/Winnowmap/releases/tag/v2.03)
@@ -26,4 +28,4 @@ Pipeline for filtering and mapping Oxford Nanopore (ONT) reads
 #### conda
 
 1. Create env ONT from file : `conda create --name ONT --file NanoTools_env.txt`
-2. Activate env `conda activate ONT`
+2. Activate env : `conda activate ONT`
