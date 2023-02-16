@@ -29,3 +29,32 @@ Pipeline for filtering and mapping Oxford Nanopore (ONT) reads
 
 1. Create env ONT from file : `conda create --name ONT --file NanoTools_env.txt`
 2. Activate env : `conda activate ONT`
+
+#### Valeria users
+
+! Warning : `NanoPlot` wheel cannot be installed correctly for now, so `00_NanoPlot.sh` must be executed from Manitou or a conda env
+
+Create a module collection and a python env for running this pipeline from Valeria's frontal node, in the pipeline's main directory : 
+
+```
+## clear env
+module purge
+
+## load required modules
+module load gcc python/3.10 winnowmap/2.03 
+
+## save collection
+module save ONT_prepr
+
+## create python env in current dir
+virtualenv --no-download --clear env/ONT_env 
+source env/ONT_env/bin/activate
+pip install nanofilt
+```
+
+Before launching any script from this pipeline, run 
+
+```
+module restore ONT_prepr
+source env/ONT_env/bin/activate
+```
