@@ -5,7 +5,7 @@ Pipeline for filtering and mapping Oxford Nanopore (ONT) reads
 ## Pipeline Overview
 
 1. Concatenate raw fastq files for each sample : `00_cat_fastq_files.sh`
-2. Plot summary statistics for each sample : `00_NanoPlot.sh` 
+2. Plot summary statistics for each sample (optional) : `00_NanoPlot.sh` 
 3. Filter reads according to lenght and minimum quality : `01_NanoFilt.sh` 
 4. Map reads to the reference : `02_winnowmap.sh` 
 

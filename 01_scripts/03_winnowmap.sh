@@ -38,4 +38,4 @@ samtools view -b $ALIGNED_DIR/"$SAMPLE".sam | samtools sort > $ALIGNED_DIR/"$SAM
 
 
 # 4. Index sorted bam file
-samtools index $ALIGNED_DIR/"$NAME".sorted.bam
+samtools index $ALIGNED_DIR/"$SAMPLE".bam
