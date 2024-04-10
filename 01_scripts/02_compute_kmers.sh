@@ -4,7 +4,7 @@
 # Launch in a conda env where Winnowmap has been installed, or load required modules/wheels
 
 # manitou
-# parallel -a 02_infos/ind_ONT.txt -j 4 srun -p medium -c 4 --time=7-00:00 -J 02_compute_kmers --mem=70G -o log/02_compute_kmers_%j.log 01_scripts/02_compute_kmers.sh &
+# srun -p medium -c 4 --time=7-00:00 -J 02_compute_kmers --mem=70G -o log/02_compute_kmers_%j.log 01_scripts/02_compute_kmers.sh &
 
 # valeria
 # srun -p ibis_medium -c 6 --time=7-00:00 -J 02_compute_kmers --mem=70G -o log/02_compute_kmers_%j.log 01_scripts/02_compute_kmers.sh &
